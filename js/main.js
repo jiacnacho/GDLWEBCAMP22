@@ -1,15 +1,7 @@
 (function(){
  'use strict';
 
-var map = L.map('mapa').setView([-34.60015, -58.451557], 16);
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
-
-L.marker([-34.60015, -58.451557]).addTo(map)
-    .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-    .openPopup();
 
 
 
@@ -116,6 +108,15 @@ L.marker([-34.60015, -58.451557]).addTo(map)
 } // Cierre del IF para elementos
     // Animaciones para Numeros 
     
+    var map = L.map('mapa').setView([-34.60015, -58.451557], 16);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+L.marker([-34.60015, -58.451557]).addTo(map)
+    .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+    .openPopup();
    
 }); // DOM CONTENT LOADED
 
